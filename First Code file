@@ -1,0 +1,281 @@
+# print("Hello World")
+
+# Comments = use # or ctrl /
+
+# Variables = store things
+
+# BpbPublications = "Publisher" # Pascal Case of naming convention (naming a variable)
+# bpbPublications = "Publisher" # Camel Case of naming convention (naming a variable)
+# bpb_publications = "Publisher" # Snake of naming convention (naming a variable)
+
+# # Data Types
+# A = 14
+# print(type(A)) #int
+
+# B = "Kartik"
+# print(type(B)) #str
+
+# C = -0.5
+# print(type(C)) #float
+
+# D = "" 
+# print(type(D)) #str
+
+# E = 34j
+# print(type(E)) #Complex
+
+# # Boolean - True and False 
+# T = True
+# print(type(T)) #Bool - Case sensitive
+
+# # Unique code 
+# a = "c"
+# print(ord(a))
+
+# # indexing - use [] while print 
+# st = "Author"
+# print(st[0], st[1], st[2], st[3], st[4], st[5])
+
+# # string slicing
+# string = "Acquisition Editor"
+# print(string[0:11:1])
+
+# # Type Conversion 
+# ab = 14
+
+# ab = str(ab)
+
+# print(type(ab))
+
+# cd = 12
+
+# cd = float(cd)
+
+# print(type(cd))
+# print(cd)
+
+# # in Bool conversion, all the values shall be converted/executed as True except 7 values i.e. False, 0, 0.0, "", [], (), {}
+
+# # Explicit and Implicit conversion - implicit : that python does by itself. Explicit : done by us
+
+# num = 18
+# print(num/6) # it will be printed as 3.0 not 3
+
+# formatted string - used in continuation of a string without making multiple strings
+# name = "Karthik"
+# age = 21
+
+# 88print(F"Hi, my name is {name}, I am {age} years old" )
+
+# input
+# nam = input("your name is: ")
+# print(f"Hi, {nam}")
+
+# num = input("Please enter your number: " )
+# print("your preferred number is: {num} ")
+
+# user = input("great, please enter your age now: ")
+# print(f"Oh!, nice to meet you {nam}, I see you are {user} years old")
+
+# variable1 = "Hi My name is Kartik"
+# variable2 = input("and you are?: ")
+
+# print(f"Oh hi {variable2}, Nice to Meet you!, I am Kartik")
+
+# Operators 7 basic operators = +, -, *, /, %, //, **
+# a = 13
+# b = 14
+# print(a + b)
+# print(a - b)
+# print(a * b)
+# print(a/b)
+# print(a//b) # converts the float value of division (/) to integer
+# print(a**b)
+# print(b%a)
+
+# Assignment Operators - used to assign Value to variables
+# basic assignment operatior is "="
+
+#Compound assigmet operators > used to reassign values directly 
+# value = 20
+# value += 40
+# value += 60
+# print(value)
+
+# Comparison Operator - alaways gives answers in Bollean (true or false)
+#inclued ==, !=, >, <, >=, <=
+
+# Logical Operator - used to combine multiple conditions and return a Bollean value
+# and, or, not
+
+#and
+# print("A" < "B" and 45 == 45) # all conditions should be True to get True
+
+# #or
+# print("A" > "B" or 66 > 99 or 12 <= 13) # Returns True or False even if one of them is despite all being of One tye
+
+#not 
+# print(not 15 >= 12) # reverses the Bollean value
+
+# print(not "A" > "B" and 12 <= 12)
+# print(not 9999 > 888 or "A" > "B")
+# print(not "A" > "B" and 18 <= 23 or "C" > "B")
+
+# print(True and bool(0))
+
+# print(ord("a"))
+
+# Conditional Statements 
+# If and Else
+# a = int(input("Please enter your preferred number here: "))
+# if a > 10:
+#     print("Hi there, you are good")
+# else:
+#     print("Hi there, sorry you do not qualify")
+
+# print("hey there, what are you planning to buy?")
+# a = input("")
+# money = float(input("Please enter your bank balance here: "))
+
+# if money >= 10000:
+#     print(F"Homie you good, you can buy {a}")
+# else:
+#     print("Sorry homeboy, better luck next time")
+
+
+# Q1. Accept two numbers and print the greatest between them.
+
+# a = float(input("enter the first number here: "))
+# b = float(input("enter the second number here: "))
+
+# if a > b:
+#     print(F"{a} is greater")
+# elif a < b:
+#     print(F"{b} is greater")
+# else:
+#     print("they are both equal")
+
+
+# Q2. Accept the gender from the user as char and print the
+# respective greeting message
+# Ex - Good Morning Sir (on the basis of gender)
+
+# a = "Male"
+# b = "Female"
+# gender = input("Please enter your gender: ")
+
+# # # if gender == a:
+# # #     print("Good Morning Sir")
+# # elif gender == b:
+#     print("Good Morning Mam")
+# # # else:
+# # #     print("Unidentified Gender")
+
+
+
+# Q3. Accept an integer and check whether it is an even number
+# or odd.
+
+# print("Hi there,")
+# a = int(input("Please enter your number here: "))
+
+# if a%2 == 0:
+#     print("This is an even number")
+# else:
+#     print("This is an odd number ")
+
+
+
+# Q4 Accept name and age from the user. Check if the user is a
+# valid voter or not.
+# Ex- “hello shery you are a valid voter”
+
+# name = input("Hi there, please enter your name: ")
+# age = int(input(F"Nice to meet you {name}, please enter your age: "))
+
+# if age >= 18:
+#      print(F"{name}, you are eligible to vote")
+# else:
+#      print(F"{name}, sorry you cannot vote for now. It's {18 - age} year(s) till you can.")
+
+
+# Q5 =  Accept a year and check if it a leap year or not (google to
+# find out what is a leap year)
+
+# a= input("Hi there, please tell us your name: ")
+# print(F"Nice to meet you {a}")
+# year = int(input(F"Please enter the year {a} you are planning to travel to: "))
+
+# if year%100 == 0 and year%400 == 0:
+#      print(F"Oh, I see.{year} would be a leap year")
+# elif year%100 != 0 and year%4 == 0:
+#      print(F"Oh, I see.{year} would be a leap year")
+# else:
+#      print(F"Oh, I see.{year} would not be a leap year")
+
+
+# name = input("Hi there, please enter your name here: ")
+# print(F"nice to meet you {name}")
+# place = input("Please enter your place of living here: ")
+# Temprature = float(input(F"Oh, {place} is a cool place, what's the temprature there: "))
+
+# if Temprature < 0:
+#      print("Oh, that would be Freezing Cold 🥶")
+# elif Temprature >= 0 and Temprature < 10:
+#      print("Oh, that's very cold ❄️")
+# elif Temprature >= 10 and Temprature < 20:
+#      print("Oh, that's cold 🧊")
+# elif Temprature >= 20 and Temprature < 30:
+#      print("Oh, that would be pleasant 😌")
+# elif Temprature >= 30 and Temprature < 40:
+#      print("Oh, that's hot ♨️")
+# else:
+#      print("Oh, that's very hot")
+
+# For Loop : used with range function
+# range fuction accepts 3 things - start, stop, steps
+
+# a = range(0,101,5)
+
+# for i in a:
+#     print(i)
+
+# for i in range(20,51,1):
+#     print(i)
+
+# for i in range(16,0,-1):
+#     print(i)
+
+# for i in range(-3,-16,-1):
+#     print(i)
+
+# table using range function
+# for i in range(5,51,5):
+#     print(i)
+
+# n = int(input("What table do you want bruh? "))
+
+# for i in range(n, 10*n +1, n):
+#     print(i)
+
+# loop for strings
+# a = "kartik is an acquisition editor"
+
+# for i in range(len(a)):
+#     print(a[i])
+
+# a = "kartik is an acquisition editor"
+
+# for i in a:
+#     print(i)
+
+# for i in range(1,101):
+#     if i == 99:
+#         break
+#     else:
+#         print(i)
+
+# for i in range(26):
+#     if i == 22:
+#         continue
+#     print(i)
