@@ -1,0 +1,26 @@
+This is a code of number guessing in python, I learnt it from youtube, this is a very simple code with help of only loops. I have used VS Code to run it
+
+import random
+
+num = random.randint(1,10)
+
+tries = 0
+
+while True:
+    guess = int(input("Guess your number here: "))
+
+    if guess == num:
+        tries += 1
+        print(f"you are right, you guessed in {tries} tries")
+        break
+
+    elif guess > num:
+     tries += 1
+     print("Your guess is a lil higher, go low")
+    
+    elif guess < num:
+       tries += 1
+       print("you guessed a bit low, go higher")
+
+    else:
+       tries += 1
