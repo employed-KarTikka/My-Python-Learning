@@ -279,3 +279,170 @@
 #     if i == 22:
 #         continue
 #     print(i)
+
+# Whole table of a number
+# n = int(input("which table are you looking for: "))
+# for i in range(1,11):
+#     print(f"{n}*{i} = {n*i}")
+
+# Sum upto n no of terms
+
+# n = int(input("Tell us your number here: "))
+# sum = 0
+
+# for i in range(1,n+1):
+#     sum = sum + i
+
+# print(f"your sum is {sum}")
+
+# Factorial of a number
+# n = int(input("Which number's factorial are you looking for: "))
+# factorial = 1
+
+# for i in range(1,n+1):
+#     factorial = factorial * i
+
+# print(f"the factorial would be {factorial}")
+
+# Print the sum of all even & odd numbers in a range separately
+# n = int(input("Tell your number: "))
+# even = 0
+# odd = 0
+
+# for i in range(1, n+1):
+#     if i%2 == 0:
+#         even = even + i
+#     else:
+#         odd = odd + i
+# print(f"your even and odd sums are {even}, {odd}")
+
+# print all factors of a number 
+
+# n = int(input("put your number here: "))
+
+# for i in range(1, n+1):
+#     if n%i == 0:
+#         print(i)
+
+# Che"cking if a number is perfect number or not
+# n = int(input("put your number here: "))
+# sum = 0
+
+# for i in range(1, n):
+#     if n%i == 0:
+#         sum = sum + i
+
+# if sum == n:
+#     print(f"{n} is a perfect number")
+# else:
+#     print(f"{n} is not a perfect number")
+
+# Checking a number is prime or not
+# n = int(input("place your number here: "))
+# count = 0
+
+# for i in range(1, n+1):
+#     if n%i == 0:
+#         count = count + 1
+# if count >= 2:
+#     print(f"{n} is not a prime number")
+# else:
+#     print(f"{n} is a prime number") 
+
+# reverse a string w/o using in built functions
+# a = "Kartik"
+# b = " "
+
+# for i in range(len(a)-1, -1, -1):
+#     b = b + a[i]
+# print(b)
+    
+# Check if a number is pallindrome or not
+# a = str(input("Write your word here: "))
+# b = ""
+
+# for i in range(len(a)-1, -1, -1):
+#     b = b + a[i]
+# if b.lower() == a.lower():
+#     print(f"{a} is a pallindrome word")
+# else:
+#     print(f"{a} is not a pallindrome word")
+
+# str = "P@#yn26at^&i5ve"
+# char = 0
+# dig = 0
+# spl = 0
+
+# for i in str:
+#     if i.isdigit():
+#         dig += 1
+#     elif i.isalpha():
+#         char += 1
+#     else:
+#         spl += 1
+# print(f"your digits are {dig}, characters are {char}, special characters are {spl}")
+
+# a = 1
+# while a <= 30:
+#     print(a)
+#     a = a +1 
+
+# seperating digits
+# a = 256
+
+# while a > 0:
+#     print(a % 10)
+#     a = a//10
+
+# n = int(input("give your number here: "))
+
+# while n > 0:
+#     print(n%10)
+#     n = n//10
+
+# n = int(input("Enter your number here: "))
+# rev = 0
+
+# while n > 0:
+#     rev = rev * 10 + (n % 10)
+#     n = n//10
+
+# print(f"Reverse of {n} would be {rev}")
+
+# n = int(input("Enter your number here: "))
+# copy = n
+# rev = 0
+
+# while n > 0:
+#     rev = rev * 10 + n % 10
+#     n = n // 10
+# if copy == rev:
+#     print(f"{copy} is a pallindrome number")
+# else:
+#     print(f"{copy} is not a pallindrome number")
+
+
+# import random
+
+# num = random.randint(1,10)
+
+# tries = 0
+
+# while True:
+#     guess = int(input("Guess your number here: "))
+
+#     if guess == num:
+#         tries += 1
+#         print(f"you are right, you guessed in {tries} tries")
+#         break
+
+#     elif guess > num:
+#      tries += 1
+#      print("Your guess is a lil higher, go low")
+    
+#     elif guess < num:
+#        tries += 1
+#        print("you guessed a bit low, go higher")
+
+#     else:
+#        tries += 1
