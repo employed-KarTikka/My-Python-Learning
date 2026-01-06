@@ -446,3 +446,40 @@
 
 #     else:
 #        tries += 1
+# Functions in python
+# def green():
+#     print("this is a basic function")
+# green()
+
+# parameters and arguments
+
+# def sum(a,b): #parameters (these are called positional arguments)
+#     print(f"The sum of the numbers is {a+b}")
+
+# sum(12,15) #arguments
+
+#  type 2 - Default argument
+
+# def person(name,age):
+#     print(f"I am {name} and my age {age}")
+# person(age = 21, name = "kartik")
+
+# check if a string is pallindrome
+
+# def pallindrom(st):
+#     rev = ""
+#     for i in range(len(st)-1, -1, -1):
+#         rev = rev + st[i]
+#     if rev == st:
+#         print("Pallindrome")
+#     else:
+#         print("Not a Pallindrome")
+
+# pallindrom("naman")
+# pallindrom("kartik")
+
+# # Return function
+
+# def hello():
+#     return "hi there"
+# print(hello()) 
